@@ -1,6 +1,7 @@
 import requests
 import random
 import string
+import time
 
 def generate_random_email():
     """Generate a random email address."""
@@ -57,6 +58,7 @@ def main():
                 print(f"Account created: {email}")
             else:
                 print(f"Failed to create account for {email}: {response.get('msg', 'Unknown error')}")
+            time.sleep(1)
 
 if __name__ == "__main__":
     main()
