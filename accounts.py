@@ -58,7 +58,7 @@ def main():
                 print(f"Account created: {email}")
             else:
                 print(f"Failed to create account for {email}: {response.get('msg', 'Unknown error')}")
-            time.sleep(1)
+            time.sleep(2)
 
 if __name__ == "__main__":
     main()
