@@ -14,9 +14,9 @@ def run_scripts_in_series():
         except Exception as e:
             print(f"Error running {script}: {e}")
 
-# Main loop to execute the scripts every 4 hours
+# Main loop to execute the scripts every 24 hours
 while True:
     print("Starting script execution...")
     run_scripts_in_series()
-    print("All scripts completed. Waiting for 4 hours...")
+    print("All scripts completed. Waiting for 24 hours...")
     time.sleep(24 * 60 * 60)  # Sleep for 4 hours
